@@ -13,6 +13,9 @@ import static org.mockito.Mockito.when;
 import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.timeout;
 
+
+import static org.mockito.Mockito.*;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
@@ -146,5 +149,43 @@ public class MathApplicationMockitoTester {
 
 	}
 
+//	There are two more points to take care when matchers are used:
+//		We can’t use them as a return value, an exact value is required when stubbing calls
+//		Finally, we can’t use argument matchers outside of verification or stubbing
+	
+//	@Test
+//	public void testMatchers() throws NoSuchFieldException, SecurityException {
+//
+//		any();
+//		any(type);
+//		anyBoolean();
+//		anyByte()
+//		anyChar()
+//		anyCollection()
+//		anyCollectionOf(clazz)
+//		anyDouble()
+//		anyFloat()
+//		anyInt()
+//		anyIterable()
+//		anyIterableOf(clazz)
+//		anyList()
+//		anyListOf(clazz)
+//		anyLong()
+//		anyMap()
+//		anyMapOf(keyClazz, valueClazz)
+//		anyObject()
+//		anySet()
+//		anySetOf(clazz)
+//		anyShort()
+//		anyString()
+//		anyVararg()
+//		
+//		
+//	}
+
+	
+	
+	
+	
 
 }
