@@ -12,12 +12,14 @@ public class MathApplication {
 		this.calcService = calcService;
 	}
 
-	public static void setExtra(double extra) {
-		MathApplication.extra = extra;
-	}
+//	public static void setExtra(double extra) {
+//		MathApplication.extra = extra;
+//	}
 
 	public double add(double input1, double input2) {
-		return calcService.add(input1, input2) + extra;
+		Integer i = new Integer(5);
+		return calcService.add(input1, input2) + extra + i;
+		
 	}
 
 	public double subtract(double input1, double input2) {
